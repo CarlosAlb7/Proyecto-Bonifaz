@@ -25,12 +25,13 @@
                 <a class="nav-link text-center" href="#">
                     <img class="img-profile rounded-circle w-50 h-50" />
                 </a>
+              
             <li class="nav-item">
-               
-                <div  aria-labelledby="headingProfile"
+
+                <div aria-labelledby="headingProfile"
                      data-parent="#accordionSidebar">
                     <div class="bg-light py-1 text-center text-justify ">
-                        <p class="collapse-item ml-4 pt-3 text-left navbar-brand" >@Html.Partial("_LoginPartial")</p>
+                        <p class="collapse-item ml-4 pt-3 text-left navbar-brand">@Html.Partial("_LoginPartial")</p>
                     </div>
                 </div>
 
@@ -108,8 +109,8 @@
                          data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
 
-                            <a class="collapse-item" href="@Url.Action("Index","Registrar_Hospitals")">Registrar Hospital</a>
-                            <a class="collapse-item" href="@Url.Action("Index","Hospitals")">Hospitales</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Registrar_Hospitals")">Hospitales</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Hospitals")">Asignar numero de hospital</a>
                         </div>
                     </div>
                 </li>
@@ -145,6 +146,7 @@
 
                             <a class="collapse-item" href="@Url.Action("Index","Pacientes")">Pacientes</a>
                             <a class="collapse-item" href="@Url.Action("Index","Doctors")">Doctores</a>
+
                         </div>
                     </div>
                 </li>
@@ -168,6 +170,22 @@
                     </div>
                 </li>
                 <!-- Divider -->
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHospitales"
+                       aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fas fa-hospital-alt"></i>
+                        <span>Hospitales</span>
+                    </a>
+                    <div id="collapseHospitales" class="collapse" aria-labelledby="headingHospitales"
+                         data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+
+                            <a class="collapse-item" href="@Url.Action("Index","Registrar_Hospitals")">Hospitales</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Hospitals")">Asignar numero de Hospital</a>
+                        </div>
+                    </div>
+                </li>
             }
             @if (User.IsInRole("Pacientes"))
             {
@@ -182,7 +200,7 @@
                          data-parent="#accordionSidebar">
                         <div class="bg-white py-1 collapse-inner rounded">
 
-                            <a class="collapse-item" href="@Url.Action("Index","Hospitals")">Hospitales</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Registrar_Hospitals")">Hospitales</a>
                         </div>
                     </div>
                 </li>

@@ -8,13 +8,13 @@
 <div class="container">
     <div class="row justify-content-center">
         <p>
-            @Html.ActionLink("Crear nueva actividad", "Create", "AgregarActividads1", new { @class = " btn btn-outline-info navbar-brand text-dark" })
+            @Html.ActionLink("Crear nueva actividad", "Create", "AgregarActividads1", new { @class = " btn btn-outline-light navbar-brand text-dark" })
         </p>
         <div class="col-md-12 bg-info">
             <div class="card">
                 <div class="card-body">
                     <table class="table table-hover bg-info">
-                        <tr>
+                        <tr class="text-white">
                             <th>
                                 @Html.DisplayNameFor(model => model.Actividad.Id)
                             </th>
@@ -38,7 +38,7 @@
 
                         @foreach (var item in Model)
                         {
-                            <tr>
+                            <tr class="text-white">
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Actividad.Id)
                                 </td>
