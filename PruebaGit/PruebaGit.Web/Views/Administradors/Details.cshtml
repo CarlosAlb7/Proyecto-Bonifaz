@@ -4,55 +4,65 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="container text-light" style="font-style:oblique;font-family:'Californian FB';">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card bg-primary">
+                <div class="card-body text-center ">
+                    <h1>Actividad</h1>
+                    <hr />
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Trabajador.Nombre)
+                        </dt>
 
-<div>
-    <h4>Administrador</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Trabajador.Nombre)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Trabajador.Nombre)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Trabajador.Nombre)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Id_Usuario)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Id_Usuario)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Id_Usuario)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Id_Usuario)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Nombre)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Nombre)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.APM)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.APM)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.APM)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.APM)
-        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.APP)
+                        </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.APP)
-        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.APP)
+                        </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.APP)
-        </dd>
+                    </dl>
+                    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "text-primary btn btn-light mr-5" })
+                    @Html.ActionLink("Inicio", "Index", new { id = Model.Id }, new { @class = "text-primary btn btn-light" })
+                </div>
+               
+                    
 
-    </dl>
+                
+               
+
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+</div>
+</div>
+</div>

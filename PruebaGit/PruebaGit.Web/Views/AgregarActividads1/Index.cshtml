@@ -5,16 +5,17 @@
 }
 
 
-<div class="container">
+<div class="container" style="font-family: 'Californian FB'">
     <div class="row justify-content-center">
-        <p>
-            @Html.ActionLink("Crear nueva actividad", "Create", "AgregarActividads1", new { @class = " btn btn-outline-light navbar-brand text-dark" })
-        </p>
-        <div class="col-md-12 bg-info">
+   
+        <div class="col-md-12 bg-primary">
             <div class="card">
                 <div class="card-body">
-                    <table class="table table-hover bg-info">
-                        <tr class="text-white">
+                    <p class="text-center">
+     @Html.ActionLink("Crear nueva actividad", "Create", "AgregarActividads1", new { @class = " btn btn-outline-light navbar-brand  bg-primary text-light" })
+                    </p>
+                    <table class="table table-hover">
+                        <tr class="text-primary">
                             <th>
                                 @Html.DisplayNameFor(model => model.Actividad.Id)
                             </th>

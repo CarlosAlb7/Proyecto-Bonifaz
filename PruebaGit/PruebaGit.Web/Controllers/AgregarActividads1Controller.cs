@@ -48,7 +48,7 @@ namespace PruebaGit.Web.Controllers
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ID_Paciente,ID_Empleado,Fecha,Hora,Actividad_Realizar,ActividadId")] AgregarActividad agregarActividad)
+        public ActionResult Create(AgregarActividad agregarActividad)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace PruebaGit.Web.Controllers
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,ID_Paciente,ID_Empleado,Fecha,Hora,Actividad_Realizar,ActividadId")] AgregarActividad agregarActividad)
+        public ActionResult Edit(AgregarActividad agregarActividad)
         {
             if (ModelState.IsValid)
             {

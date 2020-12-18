@@ -5,16 +5,16 @@
 }
 
 
-<div class="container">
+<div class="container text-light" style="font-style:oblique">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card bg-info">
-                <div class="card-header">
+            <div class="card bg-primary">
+                <div class="card-header bg-primary">
                     <h3 class="card-title text-light">Estas seguro que quieres eliminar este registro?</h3>
                     <div>
                         <hr />
-                        <dl class="dl-horizontal">
-                            <dt>    
+                        <dl class="dl-horizontal text-light">
+                            <dt>
                                 @Html.DisplayNameFor(model => model.ActividadId)
                             </dt>
 
@@ -28,16 +28,16 @@
                         {
                             @Html.AntiForgeryToken()
 
-                            <div class="form-actions">
+                            <div class="form-actions text-center">
                                 <input type="submit" value="Eliminar" class="btn btn-danger" />
-                                <div class="btn btn-light float-lg-right">
-                                    @Html.ActionLink("Regresar al Index ", "Index")
-                                </div>
+                                <a href="@Url.Action("Index","Home")" class="btn btn-primary">Regresar</a>
                             </div>
+
+
                         }
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
+</div>

@@ -19,7 +19,6 @@ namespace PruebaGit.Web.Models
         [Display(Name = "ID Empleado")]
         public int ID_Empleado { get; set; }
 
-        [Required]
         [Display(Name = "Fecha")]
         public DateTime Fecha { get; set; }
 
