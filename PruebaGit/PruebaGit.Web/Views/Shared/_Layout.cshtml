@@ -23,13 +23,12 @@
 
             <li class="nav-item ">
                 <a class="nav-link text-center" href="#">
-                    <img class="img-profile rounded-circle w-50 h-50"
-                         />
+                    <img class="img-profile rounded-circle w-50 h-50" />
                 </a>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProfile" aria-expanded="true" aria-controls="collapseProfile">
                     <div class="mr-2 d-none d-lg-inline text-light small ">
-                       
+
                     </div>
                 </a>
                 <div id="collapseProfile" class="collapse" aria-labelledby="headingProfile"
@@ -157,6 +156,22 @@
 
 
                 <!-- Nav Item - Utilities Collapse Menu -->
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                       aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>Actividades</span>
+                    </a>
+                    <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+
+                            <a class="collapse-item" href="@Url.Action("Index","AgregarActividads1")">Registrar Actividad</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Actividads1")">Actividades</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- Divider -->
             }
             @if (User.IsInRole("Pacientes"))
             {

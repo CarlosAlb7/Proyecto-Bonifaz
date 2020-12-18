@@ -31,7 +31,7 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.Numero_Hospital)
                             </td>
-                            @if (User.IsInRole("Administrador"))
+                            @if (User.IsInRole("Administrador")&&(User.IsInRole("Doctores")))
                             {
                                 <td>
                                     @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-warning fas fa-trash text-light" }) |
