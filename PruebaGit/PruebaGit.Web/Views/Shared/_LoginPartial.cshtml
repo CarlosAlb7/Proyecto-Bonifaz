@@ -6,20 +6,23 @@
     {
                     @Html.AntiForgeryToken()
    
-    <div class="bg-white py-0 collapse-inner rounded navbar-brand">
-        <div class="bg-white py-0 collapse-inner rounded text-body">
-            <a href="@Url.Action("Details", "Profile")" title="Perfil">Bienvenido @User.Identity.GetUserName()</a>
+   
+       
+        <div   aria-labelledby="headingProfile"
+             data-parent="#accordionSidebar">
+            <div class="bg-light py-1 text-center text-justify">
+                <a class="collapse-item  text-left " href="@Url.Action("Details", "Profile")" title="Perfil">Perfil</a>
+                <a class="collapse-item  text-left " href="javascript:document.getElementById('logoutForm').submit() ">Cerrar sesión</a>
+                 </div>
         </div>
-        <a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a>
-    </div>
            
     }
 }
 else
 {
 
-    @Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { title="Register", id = "registerLink" });
-    @Html.ActionLink("Iniciar sesión", "Login", "Account", routeValues: null, htmlAttributes: new { title="Iniciar Sesion", id = "loginLink"});
+    @Html.ActionLink("  Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { title="Register", id = "registerLink" });
+    @Html.ActionLink(" Iniciar", "Login", "Account", routeValues: null, htmlAttributes: new { title="Iniciar Sesion", id = "loginLink"});
 
 }
 

@@ -6,21 +6,21 @@
             <p class="mt-3">
                 @if(User.IsInRole("Administrator"))
                 {
-                <a data-toggle="modal" data-target="#AddModal" class="nav navbar-brand text-dark btn btn-outline-info" href="#">Agregar empleados </a>
+                <a data-toggle="modal" data-target="#AddModal" class="nav navbar-brand text-dark btn btn-outline-light" href="#">Agregar empleados </a>
                 }
             </p>
 
 <div class="container">
     <div class="row justify-content-center">
         <p>
-            @Html.ActionLink("Agregar un nuevo administrador", "Create", "Administradors", new { @class = "  btn btn-outline-info  navbar-brand text-dark" })
+            @Html.ActionLink("Agregar un nuevo administrador", "Create", "Administradors", new { @class = "  btn btn-outline-light  navbar-brand text-dark" })
         </p>
         <div class="col-md-12 bg-info">
             <div class="card">
                 <div class="card-body">
                     <table class="table table-hover bg-info ">
 
-                        <tr>
+                        <tr class="text-white">
                             <th>
                                 @Html.DisplayNameFor(model => model.Trabajador.Nombre)
                             </th>
@@ -41,7 +41,7 @@
 
                         @foreach (var item in Model)
                         {
-                            <tr>
+                            <tr class="text-white">
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Trabajador.Nombre)
                                 </td>

@@ -13,7 +13,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <h2 class="bg-info">Dar de alta un nuevo empleado</h2>
+            <h2 class="bg-light">Dar de alta un nuevo empleado</h2>
             <div class="col-md-12 bg-info">
                 <div class="card">
                     <div class="form-horizontal">
@@ -54,7 +54,7 @@
                             </div>
 
                             <div class="form-group col-md-4">
-                                @Html.LabelFor(model => model.TrabajadorId, "TrabajadorId", htmlAttributes: new { @class = "control-label col-md-12" })
+                                @Html.LabelFor(model => model.TrabajadorId, "Id del trabajador", htmlAttributes: new { @class = "control-label col-md-12" })
                                 <div class="col-md-10">
                                     @Html.DropDownList("TrabajadorId", null, htmlAttributes: new { @class = "form-control" })
                                     @Html.ValidationMessageFor(model => model.TrabajadorId, "", new { @class = "text-danger" })
@@ -64,10 +64,10 @@
 
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Crear" class="btn btn-dark" />
+                                <input type="submit" value="Crear" class="btn btn-light" />
 
-                                <div class="btn btn-dark text-white float-xl-right">
-                                    @Html.ActionLink("Regresar al Index", "Index")
+                                <div class="btn btn-light">
+                                    @Html.ActionLink("Regresar", "Index", new { @class = "text dark" })
                                 </div>
                             </div>
                         </div>
