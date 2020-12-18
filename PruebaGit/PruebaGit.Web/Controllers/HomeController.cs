@@ -24,5 +24,13 @@ namespace PruebaGit.Web.Controllers
            
             return View();
         }
+        public ActionResult Bienvenido()
+        {
+            return View();
+        }
+        public ActionResult Servicios()
+        {
+            return View();
+        }
     }
 }

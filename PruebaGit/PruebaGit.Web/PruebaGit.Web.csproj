@@ -451,6 +451,8 @@
     <Content Include="Views\Profile\Details.cshtml" />
     <Content Include="Views\RolesDelHospital\Index.cshtml" />
     <Content Include="Views\RolesDelHospital\AddRoles.cshtml" />
+    <Content Include="Views\Home\Bienvenido.cshtml" />
+    <Content Include="Views\Home\Servicios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

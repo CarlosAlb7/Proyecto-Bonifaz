@@ -449,7 +449,7 @@ namespace PruebaGit.Web.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Bienvenido", "Home");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult
