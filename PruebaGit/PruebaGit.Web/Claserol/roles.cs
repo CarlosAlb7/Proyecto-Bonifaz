@@ -28,7 +28,7 @@ namespace PruebaGit.Web.Claserol
             if (user == null)
             {
                 CreaterAdministrador("Administrador@administrador.com", "admin123", null, "Administrador");
-                CreaterAdministrador("Admin@gmail.com", "admin123", null, "Administrador");
+             
             }
 
 

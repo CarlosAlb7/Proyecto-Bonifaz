@@ -176,7 +176,6 @@
     <Compile Include="Controllers\ActividadsController.cs" />
     <Compile Include="Controllers\AdministradorsController.cs" />
     <Compile Include="Controllers\AgregarActividads1Controller.cs" />
-    <Compile Include="Controllers\AgregarActividadsController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HospitalsController.cs" />
