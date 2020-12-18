@@ -10,10 +10,10 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    <div class="container">
+    <div class="container text-light" style="font-family:'Californian FB'">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card bg-info">
+                <div class="card bg-primary">
                     <div class="form-horizontal">
                         <h2 class="text-center">Doctor</h2>
                         <hr />
@@ -28,12 +28,12 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group text-center">
                             <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Guardar cambios" class="btn btn-dark" />
+                                <input type="submit" value="Guardar cambios" class="btn btn-primary" />
 
-                                <div class="btn btn-dark text-white float-xl-right">
-                                    @Html.ActionLink("Regresar al Index", "Index")
+     
+                                   <a href="@Url.Action("Index","Doctors")" class="btn btn-primary">Index</a> 
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 }
 
 

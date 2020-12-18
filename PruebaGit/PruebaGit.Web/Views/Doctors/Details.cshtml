@@ -4,10 +4,10 @@
     ViewBag.Title = "Details";
 }
 
-<div class="container-fluid text-light">
+<div class="container-fluid text-light" style="font-family:'Californian FB'">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card bg-info">
+            <div class="card bg-primary">
                 <div class="card-body text-lg-center ">
                     <h1>Doctor</h1>
                     <hr />
@@ -23,9 +23,9 @@
                     </dl>
                 </div>
                 <div class="form text-center p-3">
-                    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "text-light btn btn-warning" })
-                    <div class="btn btn-light btn-group-toggle">
-                        @Html.ActionLink("Salir", "Index")
+                    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }, new { @class = "text-light btn btn-success mr-5" })
+
+                      <a href="@Url.Action("Index","Doctors")" class="btn btn-primary">  Inicio</a>
                     </div>
                 </div>
 
@@ -33,4 +33,3 @@
         </div>
     </div>
 
-</div>
