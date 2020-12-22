@@ -75,16 +75,12 @@ namespace PruebaGit.Web.Claserol
                 Rol = rol
 
             };
-
             //Creamos un usuario
             userManager.Create(user, password);
             //Agregar un rol
             userManager.AddToRole(user.Id, rol);
         }
 
-       
-      
-       
         public void Dispose()
         {
             db.Dispose();
