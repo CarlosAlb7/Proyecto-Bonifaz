@@ -38,6 +38,7 @@ namespace PruebaGit.Web.Models
             SqlCommand _comand = new SqlCommand("ConsultarProductos", _conn as SqlConnection);
             _comand.CommandType = CommandType.StoredProcedure;
             IDataReader _reader = _comand.ExecuteReader();
+           
             List<ProductosEN> _lista = new List<ProductosEN>();
             while(_reader.Read())
             {
@@ -49,7 +50,9 @@ namespace PruebaGit.Web.Models
                 pEN.Especialidad = _reader.GetString(4);
                 pEN.Servicio = _reader.GetString(5);
                 _lista.Add(pEN);
+            
             }
+          
             _conn.Close();
             return _lista;
         }
