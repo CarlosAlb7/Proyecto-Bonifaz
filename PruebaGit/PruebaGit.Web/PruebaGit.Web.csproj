@@ -181,6 +181,7 @@
     <Compile Include="Controllers\HospitalsController.cs" />
     <Compile Include="Controllers\manageController.cs" />
     <Compile Include="Controllers\PacientesController.cs" />
+    <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\Registrar_HospitalsController.cs" />
     <Compile Include="Controllers\RolesDelHospitalController.cs" />
@@ -233,11 +234,15 @@
     <Compile Include="Models\Actividad.cs" />
     <Compile Include="Models\Administrador.cs" />
     <Compile Include="Models\AgregarActividad.cs" />
+    <Compile Include="Models\DBCommon.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Hospital.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Paciente.cs" />
+    <Compile Include="Models\ProductosBL.cs" />
+    <Compile Include="Models\ProductosDAL.cs" />
+    <Compile Include="Models\ProductosEN.cs" />
     <Compile Include="Models\ProfileViewModel.cs" />
     <Compile Include="Models\Registrar_Hospital.cs" />
     <Compile Include="Models\Trabajador.cs" />
@@ -461,6 +466,8 @@
     <Content Include="Views\RolesDelHospital\AddRoles.cshtml" />
     <Content Include="Views\Home\Bienvenido.cshtml" />
     <Content Include="Views\Home\Servicios.cshtml" />
+    <Content Include="Views\Productos\Index.cshtml" />
+    <Content Include="Views\Productos\Agregar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

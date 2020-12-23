@@ -74,9 +74,8 @@
                     </a>
                     <div id="collapseDoctores1" class="collapse" aria-labelledby="headingDoctores1" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-
-                            <a class="collapse-item" href="@Url.Action("Index","Pacientes")">Pacientes</a>
-                            <a class="collapse-item" href="@Url.Action("Index","Doctors")">Doctores</a>
+                       
+                            <a class="collapse-item" href="@Url.Action("Agregar","Productos")">Agregar Doctor</a>
                         </div>
                     </div>
                 </li>
@@ -133,20 +132,6 @@
                     </div>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCerrar"
-                       aria-expanded="true" aria-controls="collapseCerrar">
-                        <i class="fas fa-sign-out-alt text-danger"></i>
-                        <span>Salir</span>
-                    </a>
-                    <div id="collapseCerrar" class="collapse" aria-labelledby="headingCerrar"
-                         data-parent="#accordionSidebar">
-                        <div class="bg-white  collapse-inner rounded">
-                            
-                          <a class="collapse-item" href="javascript:document.getElementById('logoutForm').submit()"> Cerrar sesión</a>
-                        </div>
-                    </div>
-                </li>
             }
             @if (User.IsInRole("Doctores"))
             {

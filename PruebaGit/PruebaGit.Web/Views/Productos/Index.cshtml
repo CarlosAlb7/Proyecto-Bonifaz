@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var ListaProductos = ViewBag.ListaProductos;
+
+}
+
+
+
+
+<div class="container" style="font-family:'Times New Roman', Times, serif; font-size:15px;">
+    <div class="card" style="background:fixed">
+    <h2 class="text-center">Lista de doctores</h2>
+    <a href="@Url.Action("Agregar")" class="btn btn-facebook text-lg-center">Agregar</a>
+    <div class="row">
+
+       @{ 
+           int count = 1;
+       }
+
+        @foreach (var p in ListaProductos)
+        {
+            <div class="col-lg-3">
+                <div class="card">
+                    <h3 class="text-center">@count</h3>
+                    <div class="card-header text-center" style="background:black; color:white;">@p.Nombre</div>
+                    <div class="card-body text-center" style="background:black; color:white;">
+                        <img class="img-responsive rounded-circle" src="@p.Imagen" alt="" width="180" height="180" />
+                        <p>Telefono: @p.Telefono</p>
+                        <p>Especialidad: @p.Especialidad</p>
+                        <p>Servicio: @p.Servicio</p>
+                    </div>
+                </div>
+            </div>
+            count++;
+        }
+        
+    </div>
+</div>
+
+    </div>
