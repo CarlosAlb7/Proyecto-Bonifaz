@@ -485,7 +485,7 @@
     <Content Include="Views\Citas\Details.cshtml" />
     <Content Include="Views\Citas\Edit.cshtml" />
     <Content Include="Views\Citas\Index.cshtml" />
-    <Content Include="Views\Formulario\Index.cshtml" />
+    <Content Include="Views\Formulario\Formulario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
