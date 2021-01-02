@@ -178,6 +178,7 @@
     <Compile Include="Controllers\AgregarActividads1Controller.cs" />
     <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
+    <Compile Include="Controllers\EnvioFormularioController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HospitalsController.cs" />
     <Compile Include="Controllers\manageController.cs" />
@@ -242,6 +243,7 @@
     <Compile Include="Models\Citas.cs" />
     <Compile Include="Models\DBCommon.cs" />
     <Compile Include="Models\Doctor.cs" />
+    <Compile Include="Models\Formulario.cs" />
     <Compile Include="Models\Hospital.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -482,6 +484,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\EnvioFormulario\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
