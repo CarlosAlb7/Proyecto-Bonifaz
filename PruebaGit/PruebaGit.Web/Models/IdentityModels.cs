@@ -54,6 +54,7 @@ namespace PruebaGit.Web.Models
         public DbSet<Hospital> Hospitals { get; set; }
         public DbSet<Registrar_Hospital> Registrar_Hospitals { get; set; }
         public DbSet<Citas> Citas { get; set; }
+        public DbSet<Formulario> Formulario { get; set; }
 
         public System.Data.Entity.DbSet<PruebaGit.Web.Models.Actividad> Actividads { get; set; }
 

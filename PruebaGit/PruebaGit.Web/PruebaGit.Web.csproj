@@ -178,7 +178,7 @@
     <Compile Include="Controllers\AgregarActividads1Controller.cs" />
     <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
-    <Compile Include="Controllers\EnvioFormularioController.cs" />
+    <Compile Include="Controllers\FormularioController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HospitalsController.cs" />
     <Compile Include="Controllers\manageController.cs" />
@@ -234,6 +234,10 @@
     <Compile Include="Migrations\202101012345135_StartCitas.cs" />
     <Compile Include="Migrations\202101012345135_StartCitas.Designer.cs">
       <DependentUpon>202101012345135_StartCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101020404416_StartFormulario.cs" />
+    <Compile Include="Migrations\202101020404416_StartFormulario.Designer.cs">
+      <DependentUpon>202101020404416_StartFormulario.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -481,10 +485,10 @@
     <Content Include="Views\Citas\Details.cshtml" />
     <Content Include="Views\Citas\Edit.cshtml" />
     <Content Include="Views\Citas\Index.cshtml" />
+    <Content Include="Views\Formulario\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\EnvioFormulario\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -531,6 +535,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101012345135_StartCitas.resx">
       <DependentUpon>202101012345135_StartCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101020404416_StartFormulario.resx">
+      <DependentUpon>202101020404416_StartFormulario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

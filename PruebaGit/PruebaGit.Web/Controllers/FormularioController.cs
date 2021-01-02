@@ -1,20 +1,21 @@
-﻿using PruebaGit.Web.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
+using PruebaGit.Web.Models;
 
 namespace PruebaGit.Web.Controllers
 {
-    public class EnvioFormularioController : Controller
+    public class FormularioController : Controller
     {
-        // GET: EnvioFormulario
-        public ActionResult Index()
+
+        public ActionResult Formulario()
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult Formulario(Formulario model)
         {
@@ -28,8 +29,12 @@ namespace PruebaGit.Web.Controllers
 
             mensaje.IsBodyHtml = true;
             var smtp = new SmtpClient();
-
-
+            smtp.Send(mensaje);
+            return RedirectToAction("Index");
+        }
+        public ActionResult Index()
+        {
+            return View();
         }
     }
 }
