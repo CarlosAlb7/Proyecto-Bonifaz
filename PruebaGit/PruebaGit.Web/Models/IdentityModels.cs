@@ -53,6 +53,7 @@ namespace PruebaGit.Web.Models
         ////////--------------------------TABLA DE HOSPITAL QUE REGISTRA HOSPITALES---------------------------//
         public DbSet<Hospital> Hospitals { get; set; }
         public DbSet<Registrar_Hospital> Registrar_Hospitals { get; set; }
+        public DbSet<Citas> Citas { get; set; }
 
         public System.Data.Entity.DbSet<PruebaGit.Web.Models.Actividad> Actividads { get; set; }
 

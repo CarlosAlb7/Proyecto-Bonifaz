@@ -176,6 +176,7 @@
     <Compile Include="Controllers\ActividadsController.cs" />
     <Compile Include="Controllers\AdministradorsController.cs" />
     <Compile Include="Controllers\AgregarActividads1Controller.cs" />
+    <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HospitalsController.cs" />
@@ -229,17 +230,22 @@
     <Compile Include="Migrations\202012182014587_Actualizar.Designer.cs">
       <DependentUpon>202012182014587_Actualizar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101012345135_StartCitas.cs" />
+    <Compile Include="Migrations\202101012345135_StartCitas.Designer.cs">
+      <DependentUpon>202101012345135_StartCitas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Actividad.cs" />
     <Compile Include="Models\Administrador.cs" />
     <Compile Include="Models\AgregarActividad.cs" />
+    <Compile Include="Models\Citas.cs" />
     <Compile Include="Models\DBCommon.cs" />
     <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\Hospital.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Paciente.cs" />
+    <Compile Include="Models\Citas1.cs" />
     <Compile Include="Models\ProductosBL.cs" />
     <Compile Include="Models\ProductosDAL.cs" />
     <Compile Include="Models\ProductosEN.cs" />
@@ -468,6 +474,11 @@
     <Content Include="Views\Home\Servicios.cshtml" />
     <Content Include="Views\Productos\Index.cshtml" />
     <Content Include="Views\Productos\Agregar.cshtml" />
+    <Content Include="Views\Citas\Create.cshtml" />
+    <Content Include="Views\Citas\Delete.cshtml" />
+    <Content Include="Views\Citas\Details.cshtml" />
+    <Content Include="Views\Citas\Edit.cshtml" />
+    <Content Include="Views\Citas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -514,6 +525,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012182014587_Actualizar.resx">
       <DependentUpon>202012182014587_Actualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101012345135_StartCitas.resx">
+      <DependentUpon>202101012345135_StartCitas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
