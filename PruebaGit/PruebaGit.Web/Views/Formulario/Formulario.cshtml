@@ -1,0 +1,27 @@
+﻿@model PruebaGit.Web.Models.Formulario
+@{
+    ViewBag.Title = "Formulario";
+}
+
+
+
+<h1>Enviar Correo</h1>
+<form method="post" enctype="multipart/form-data" style="width:600px">
+    <div>
+        <label> Destino </label>
+        <input class="form-control" type="email" name="Destino" placeholder="Email" />
+    </div>
+    <hr />
+    <div>
+        <label> Asunto </label>
+        <input class="form-control" type="text" name="Asunto" placeholder="Asunto" />
+    </div>
+    <hr />
+    <div>
+        <label> Mensaje </label>
+   
+        <textarea style="width:600px; height:200px;" class="form-control"  name="Mensaje" placeholder="Escriba el Mensaje"></textarea>
+    </div>
+    <hr />
+    <button id="enviar" class="btn btn-primary" type="submit">Enviar Correo</button>
+</form>

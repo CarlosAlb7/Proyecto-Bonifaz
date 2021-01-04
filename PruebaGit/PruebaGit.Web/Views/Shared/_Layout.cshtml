@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,10 +23,18 @@
 
             <li class="">
 
+<<<<<<< HEAD
                 <img style="width: 100px; height: 100px; margin-left:60px; margin-top: 20px;" src="~/Content/img/logazorecortado.png" />
 
                 <h4 style="margin-left: 30px; color: white; margin-bottom: 20px;">Hopital Express</h4>
                 
+=======
+                <h3 class="text-light mr">
+                    H
+                    <i class="fas fa-hospital mr-2 mt-5">E</i>
+                </h3>
+
+>>>>>>> master
             <li class="nav-item">
 
                 <div aria-labelledby="headingProfile"
@@ -39,8 +48,8 @@
             @*Condicional para acceder con administrador de acuerdo al rol*@
             @if (User.IsInRole("Administrador"))
             {
-               
-               
+
+
 
 
                 <!-- Nav Item - Utilities Collapse Menu -->
@@ -74,10 +83,27 @@
                         <div class="bg-white py-2 collapse-inner rounded">
 
                             <a class="collapse-item" href="@Url.Action("Agregar","Productos")">Agregar Doctor</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Doctors")">Doctores2</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Pacientes")">Pacientes</a>
+
                         </div>
                     </div>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCitas"
+                       aria-expanded="true" aria-controls="collapseCitas">
+                        <i class="fas fa-stethoscope"></i>
+                        <span>Citas</span>
+                    </a>
+                    <div id="collapseCitas" class="collapse" aria-labelledby="headingCitas" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+
+                            <a class="collapse-item" href="@Url.Action("Create","Citas")">Agregar Citas</a>
+                            <a class="collapse-item" href="@Url.Action("Index","Citas")">Consultar Citas</a>
+                        </div>
+                    </div>
+                </li>
 
 
                 <!-- Nav Item - Utilities Collapse Menu -->
