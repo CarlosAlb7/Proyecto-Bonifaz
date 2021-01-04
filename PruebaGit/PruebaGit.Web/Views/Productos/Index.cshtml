@@ -1,41 +1,53 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-    var ListaProductos = ViewBag.ListaProductos;
-
-}
+﻿@model IEnumerable<PruebaGit.Web.Models.ProductosEN>
 
 
 
+<!DOCTYPE html>
 
-<div class="container" style="font-family:'Times New Roman', Times, serif; font-size:15px;">
-    <div class="card" style="background:fixed">
-    <h2 class="text-center">Lista de doctores</h2>
-    <a href="@Url.Action("Agregar")" class="btn btn-facebook text-lg-center">Agregar</a>
-    <div class="row">
-    
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
 
-        @foreach (var p in ListaProductos)
-        {
+
+
+    <div class="contenedor" style="font-family:'Times New Roman', Times, serif; font-size:15px;">
+        <div class="card" style="background:fixed">
+            <h2 class="text-center">Lista de doctores</h2>
+            <a href="@Url.Action("Agregar")"class="btn btn-facebook text-lg-center">Agregar</a>
+            <div class="row">
+
+                @{
+                    int count = 1;
+                }
+
+                @foreach (var p in Model)
+                {
             <div class="col-lg-3">
-                <div class="card">
-                    <h3 class="text-center">@p.Numero</h3>
-                    <div class="card-header text-center" style="background:black; color:white;">@p.Nombre</div>
-                    <div class="card-body text-center" style="background:black; color:white;">
-                        <img class="img-responsive rounded-circle" src="@p.Imagen" alt="" width="180" height="180" />
+                <div class="card text-center mt-3">
+                    <h5 clase="text-center">@count</h5>
+             <div class="card-header text-center" style="background: rgb(63,101,212); color: white;">@p.Nombre</div>
+                     <div class="card-body text-center" style="background: rgb(63,101,212); color: white;">
+                     <img class="img-responsive rounded-circle" src="@p.Imagen" alt="" width="180" height="180" />
                         <p>Telefono: @p.Telefono</p>
                         <p>Especialidad: @p.Especialidad</p>
                         <p>Servicio: @p.Servicio</p>
+  @Html.ActionLink("Editar", "Edit", new { id = p.Id }, new { @class = "btn btn-outline-dark fas fa-trash text-light text-center" })
+  @Html.ActionLink("Eliminar", "Delete", new { id = p.Id }, new { @class = "btn btn-outline-danger fas fa-trash text-light text-center" })
 
-                        @* Boton de borrar  *@
-                      <a href="/Productos/Baja?cod=@p.Id",class="btn btn-danger">Borrar Doctor</a>                
                     </div>
                 </div>
             </div>
-            
+            count++;
+
         }
-        
-    </div>
-</div>
+
+            </div>
+        </div>
 
     </div>
+
+</body>
+</html>
