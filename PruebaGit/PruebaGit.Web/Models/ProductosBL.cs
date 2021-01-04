@@ -8,6 +8,8 @@ namespace PruebaGit.Web.Models
     public class ProductosBL
     {
         ProductosDAL _dal = new ProductosDAL();
+
+
         public int AgregarProducto(ProductosEN pEN)
         {
             return _dal.AgregarProducto(pEN);

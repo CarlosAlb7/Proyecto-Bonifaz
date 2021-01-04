@@ -239,6 +239,10 @@
     <Compile Include="Migrations\202101020404416_StartFormulario.Designer.cs">
       <DependentUpon>202101020404416_StartFormulario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101040342223_ProductosBaja.cs" />
+    <Compile Include="Migrations\202101040342223_ProductosBaja.Designer.cs">
+      <DependentUpon>202101040342223_ProductosBaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Actividad.cs" />
@@ -539,6 +543,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101020404416_StartFormulario.resx">
       <DependentUpon>202101020404416_StartFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101040342223_ProductosBaja.resx">
+      <DependentUpon>202101040342223_ProductosBaja.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

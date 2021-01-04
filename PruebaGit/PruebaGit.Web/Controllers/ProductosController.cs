@@ -31,5 +31,13 @@ namespace PruebaGit.Web.Controllers
             return RedirectToAction("Index");
 
         }
+
+
+        //public ActionResult Baja(int cod)
+        //{
+        //    ProductosDAL mp = new ProductosDAL();
+        //    mp.BorrarProducto(cod);
+        //    return RedirectToAction("Index");
+        //}
     }
 }
