@@ -243,6 +243,10 @@
     <Compile Include="Migrations\202101040342223_ProductosBaja.Designer.cs">
       <DependentUpon>202101040342223_ProductosBaja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101040909239_Migracion.cs" />
+    <Compile Include="Migrations\202101040909239_Migracion.Designer.cs">
+      <DependentUpon>202101040909239_Migracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Actividad.cs" />
@@ -483,14 +487,16 @@
     <Content Include="Views\RolesDelHospital\AddRoles.cshtml" />
     <Content Include="Views\Home\Bienvenido.cshtml" />
     <Content Include="Views\Home\Servicios.cshtml" />
-    <Content Include="Views\Productos\Index.cshtml" />
-    <Content Include="Views\Productos\Agregar.cshtml" />
     <Content Include="Views\Citas\Create.cshtml" />
     <Content Include="Views\Citas\Delete.cshtml" />
     <Content Include="Views\Citas\Details.cshtml" />
     <Content Include="Views\Citas\Edit.cshtml" />
     <Content Include="Views\Citas\Index.cshtml" />
     <Content Include="Views\Formulario\Formulario.cshtml" />
+    <Content Include="Views\Productos\Delete.cshtml" />
+    <Content Include="Views\Productos\Edit.cshtml" />
+    <Content Include="Views\Productos\Agregar.cshtml" />
+    <Content Include="Views\Productos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -546,6 +552,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101040342223_ProductosBaja.resx">
       <DependentUpon>202101040342223_ProductosBaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101040909239_Migracion.resx">
+      <DependentUpon>202101040909239_Migracion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

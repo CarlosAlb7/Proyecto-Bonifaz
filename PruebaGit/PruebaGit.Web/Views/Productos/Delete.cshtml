@@ -1,0 +1,79 @@
+﻿@model PruebaGit.Web.Models.ProductosEN
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+        <div class="container text-light" style="font-style:oblique; margin-top:40px; font-family:'Californian FB';">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card bg-primary">
+                        <div class="card-header bg-primary">
+                            <h3 class="card-title text-light">Estas seguro que quieres eliminar este registro?</h3>
+                            <div>
+                                <hr />
+                                <dl class="dl-horizontal text-light">
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Nombre)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Nombre)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Imagen)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Imagen)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Telefono)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Telefono)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Especialidad)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Especialidad)
+                                    </dd>
+
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Servicio)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Servicio)
+                                    </dd>
+
+                                </dl>
+
+                                @using (Html.BeginForm())
+                                {
+                                    @Html.AntiForgeryToken()
+
+                                    <div class="form-actions text-center">
+                                        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+                                        <a href="@Url.Action("Index", "Productos")" class="btn btn-light">Regresar</a>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

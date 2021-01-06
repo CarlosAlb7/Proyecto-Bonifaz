@@ -8,7 +8,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <p>
-            @Html.ActionLink("Agrega un nuevo paciente", "Create", "Paciente", new { @class = "btn btn-outline-light navbar-brand text-dark" })
+ @Html.ActionLink("Agrega un nuevo paciente", "Create", "Paciente", new { @class = "btn btn-outline-light navbar-brand text-dark" })
         </p>
         <div class="col-md-12 bg-info">
             <div class="card">
@@ -76,9 +76,9 @@
                                     @Html.DisplayFor(modelItem => item.Enfermedad_Paciente)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-warning fas fa-trash text-light" }) |
-                                    @Html.ActionLink("Ver", "Details", new { id = item.Id }, new { @class = "btn btn-success fas fa-eye" }) |
-                                    @Html.ActionLink("Eliminar", "Delete", new { id = item.Id }, new { @class = "btn btn-danger fas fa-trash" })
+  @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-warning fas fa-trash text-light" }) |
+  @Html.ActionLink("Ver", "Details", new { id = item.Id }, new { @class = "btn btn-success fas fa-eye" }) |
+  @Html.ActionLink("Eliminar", "Delete", new { id = item.Id }, new { @class = "btn btn-danger fas fa-trash" })
                                 </td>
                             </tr>
                         }
