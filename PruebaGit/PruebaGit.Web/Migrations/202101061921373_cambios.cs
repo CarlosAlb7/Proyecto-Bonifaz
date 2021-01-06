@@ -3,9 +3,14 @@ namespace PruebaGit.Web.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class StartFormulario : DbMigration
+    public partial class cambios : DbMigration
     {
         public override void Up()
+        {
+            DropTable("dbo.Formularios");
+        }
+        
+        public override void Down()
         {
             CreateTable(
                 "dbo.Formularios",
@@ -18,11 +23,6 @@ namespace PruebaGit.Web.Migrations
                     })
                 .PrimaryKey(t => t.Id);
             
-        }
-        
-        public override void Down()
-        {
-            DropTable("dbo.Formularios");
         }
     }
 }

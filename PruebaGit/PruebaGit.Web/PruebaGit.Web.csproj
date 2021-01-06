@@ -178,7 +178,6 @@
     <Compile Include="Controllers\AgregarActividads1Controller.cs" />
     <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
-    <Compile Include="Controllers\FormularioController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Controllers\HospitalsController.cs" />
     <Compile Include="Controllers\manageController.cs" />
@@ -227,25 +226,17 @@
     <Compile Include="Migrations\202012180808550_StartActividad11.Designer.cs">
       <DependentUpon>202012180808550_StartActividad11.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202012182014587_Actualizar.cs" />
-    <Compile Include="Migrations\202012182014587_Actualizar.Designer.cs">
-      <DependentUpon>202012182014587_Actualizar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202101012345135_StartCitas.cs" />
     <Compile Include="Migrations\202101012345135_StartCitas.Designer.cs">
       <DependentUpon>202101012345135_StartCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202101020404416_StartFormulario.cs" />
-    <Compile Include="Migrations\202101020404416_StartFormulario.Designer.cs">
-      <DependentUpon>202101020404416_StartFormulario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202101040342223_ProductosBaja.cs" />
-    <Compile Include="Migrations\202101040342223_ProductosBaja.Designer.cs">
-      <DependentUpon>202101040342223_ProductosBaja.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202101040909239_Migracion.cs" />
     <Compile Include="Migrations\202101040909239_Migracion.Designer.cs">
       <DependentUpon>202101040909239_Migracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101061921373_cambios.cs" />
+    <Compile Include="Migrations\202101061921373_cambios.Designer.cs">
+      <DependentUpon>202101061921373_cambios.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -255,7 +246,6 @@
     <Compile Include="Models\Citas.cs" />
     <Compile Include="Models\DBCommon.cs" />
     <Compile Include="Models\Doctor.cs" />
-    <Compile Include="Models\Formulario.cs" />
     <Compile Include="Models\Hospital.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -492,7 +482,6 @@
     <Content Include="Views\Citas\Details.cshtml" />
     <Content Include="Views\Citas\Edit.cshtml" />
     <Content Include="Views\Citas\Index.cshtml" />
-    <Content Include="Views\Formulario\Formulario.cshtml" />
     <Content Include="Views\Productos\Delete.cshtml" />
     <Content Include="Views\Productos\Edit.cshtml" />
     <Content Include="Views\Productos\Agregar.cshtml" />
@@ -541,20 +530,14 @@
     <EmbeddedResource Include="Migrations\202012180808550_StartActividad11.resx">
       <DependentUpon>202012180808550_StartActividad11.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012182014587_Actualizar.resx">
-      <DependentUpon>202012182014587_Actualizar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101012345135_StartCitas.resx">
       <DependentUpon>202101012345135_StartCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101020404416_StartFormulario.resx">
-      <DependentUpon>202101020404416_StartFormulario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202101040342223_ProductosBaja.resx">
-      <DependentUpon>202101040342223_ProductosBaja.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202101040909239_Migracion.resx">
       <DependentUpon>202101040909239_Migracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101061921373_cambios.resx">
+      <DependentUpon>202101061921373_cambios.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
